@@ -17,13 +17,14 @@ User agent styles have lower priority, so your styles override them.
         2. If that results in a tie, the selector with the most classes wins.
         3. If that results in a tie, the selector with the most tag names wins.
 
-        ### Calculating Specifity using Notation.
-        Selector                    | IDs| Classes | Tags  | Notation |
-        --------------------------  | ---|---------|-------|--------- |
-        html body header h1         | 0  | 0       | 4     | 0,0,4    |
-        body header.page-header h1  | 0  | 1       | 3     | 0,1,3    |
-        .page-header .title         | 0  | 2       | 0     | 0,2,0    |
-        #page-title                 | 1  | 0       | 0     | 1,0,0    |
+### Calculating Specifity using Notation.
+
+    Selector                    | IDs| Classes |Tags  | Notation |
+    --------------------------  | ---|---------|------|--------- |
+    html body header h1         | 0  | 0       |4     | 0,0,4    |
+    body header.page-header h1  | 0  | 1       |3     | 0,1,3    |
+    .page-header .title         | 0  | 2       |0     | 0,2,0    |
+    #page-title                 | 1  | 0       |0     | 1,0,0    |
 
 ## Understanding source order.
 
